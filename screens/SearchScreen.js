@@ -11,8 +11,6 @@ import {
 } from 'react-native';
 
 import { WebBrowser } from 'expo';
-
-import { MonoText } from '../components/StyledText';
 import { MovieList } from '../components/MovieList';
 
 export default class SearchScreen extends React.Component {
