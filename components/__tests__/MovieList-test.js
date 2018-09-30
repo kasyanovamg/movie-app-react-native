@@ -1,10 +1,10 @@
 import 'react-native';
 import React from 'react';
-import { MonoText } from '../StyledText';
+import { MovieList } from '../MovieList';
 import renderer from 'react-test-renderer';
 
 it('renders correctly', () => {
-  const tree = renderer.create(<MonoText>Snapshot test!</MonoText>).toJSON();
+  const tree = renderer.create(<MovieList>Snapshot test!</MovieList>).toJSON();
 
   expect(tree).toMatchSnapshot();
 });
