@@ -43,7 +43,6 @@ export default class SearchScreen extends React.Component {
   }
 
   filteredList = (text) => {
-    console.log(text)
     let filteredList = this.state.dataSource.filter(
       movie => movie.title.toLowerCase().includes(text.toLowerCase()))
     return this.setState({
@@ -75,7 +74,9 @@ export default class SearchScreen extends React.Component {
           </View>
           <View style={styles.moviesContainer}>
 
-            <MovieList movies={this.state.filteredMovies} loading={this.state.isLoading} />
+            <MovieList movies={this.state.filteredMovies} loading={this.state.isLoading} 
+            navigate={this.props.navigation.navigate}
+            />
 
           </View>
 
